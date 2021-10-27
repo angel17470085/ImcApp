@@ -11,7 +11,7 @@ namespace ImcApp
 {
     public partial class MainPage : ContentPage
     {
-       // private CalculadoraImc imc;
+       private CalculadoraImc imc;
         public MainPage()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace ImcApp
             {
                 CalculadoraImc cimc = new CalculadoraImc(peso, estatura);
                 imcLabel.Text = string.Format("{0:F4}", cimc.Imc);
-                situacionNutricionalLabel.Text = cimc.SituacionNutricional.ToString();
+                situacionNutricionalLabel.Text = cimc.GetEstadoNutricional(cimc.SituacionNutricional);
             }
 
             else

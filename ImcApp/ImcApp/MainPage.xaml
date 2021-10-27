@@ -22,10 +22,10 @@
         <Frame Margin="16" CornerRadius="0" BorderColor="LightGray">
             <StackLayout>
                 <Label Text="El indice de masa corporal de la persona es:" FontSize="Medium" TextColor="Gray"/>
-                <Label Text="23.4567" x:Name="imcLabel" FontSize="36" HorizontalOptions="Center"/>
+                <Label Text="23.4567" x:Name="imcLabel" FontSize="36" HorizontalOptions="Center" TextColor="Gray"/>
 
-                <Label Text="La situacion nutricional de la persona es:" FontSize="Medium"/>
-                <Label Text="Peso normal" x:Name="situacionNutricionalLabel" HorizontalOptions="Center" FontSize="36"/>
+                <Label Text="La situacion nutricional de la persona es:" FontSize="Medium" TextColor="Gray"/>
+                <Label Text="Peso normal" x:Name="situacionNutricionalLabel" HorizontalOptions="Center" FontSize="36" TextColor="Gray"/>
             </StackLayout>
            
             

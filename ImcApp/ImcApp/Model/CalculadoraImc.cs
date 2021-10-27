@@ -59,5 +59,31 @@ namespace ImcApp.Model
             } 
             
         }
+
+        public String GetEstadoNutricional (CalculadoraImc.EstadoNutricional estado)
+        {
+            switch (estado)
+            {
+                case EstadoNutricional.PesoBajo:
+                    return "Peso bajo";
+                    
+                case EstadoNutricional.PesoNormal:
+                    return "Peso normal";
+                   
+                case EstadoNutricional.SobrePeso:
+                    return "Sobre Peso";
+                    
+                case EstadoNutricional.Obesidad:
+                    return "Obesidad";
+                    
+                  
+                case EstadoNutricional.ObesidadExtrema:
+                    return "Obesidad Extrema";
+                    
+                default:
+                    return string.Empty;
+                  
+            }
+        }
     }
 }
